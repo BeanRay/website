@@ -32,17 +32,19 @@ ul {
 #contact {
 	top: -750px;
 	position: relative;
-	left: 300px;
+	left: 250px;
 	border: 3px solid #73ad2100;
   }
 
   #mainContent {
 	position: relative;
-	left: -100px;
+	left: -30px;
 	border: 3px solid #73ad2100;
   }
 
 #footer {
+	top: -550px;
+	position: relative;
 	clear: both;
 	background: rgb(3, 3, 3);
 	padding: 10px;
