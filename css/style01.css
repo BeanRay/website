@@ -23,6 +23,20 @@ ul {
 }
 
 
+#contact {
+	top: -750px;
+	position: relative;
+	left: 300px;
+	border: 3px solid #73ad2100;
+  }
+
+  #mainContent {
+	position: relative;
+	left: -100px;
+	border: 3px solid #73ad2100;
+  }
+
+
 
 #footer {
 	clear: both;
@@ -31,4 +45,7 @@ ul {
 	border-top: 2px solid rgba(221, 221, 221, 0);
 	text-align: center;
 	color: rgb(240, 240, 240);
+	top: -1750px;
 }
+
+
