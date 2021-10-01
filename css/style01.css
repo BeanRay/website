@@ -23,6 +23,12 @@ ul {
 }
 
 
+#header{
+	background: url(../images/tokyo.jpg);
+}
+
+
+
 #contact {
 	top: -750px;
 	position: relative;
@@ -36,8 +42,6 @@ ul {
 	border: 3px solid #73ad2100;
   }
 
-
-
 #footer {
 	clear: both;
 	background: rgb(3, 3, 3);
@@ -45,7 +49,6 @@ ul {
 	border-top: 2px solid rgba(221, 221, 221, 0);
 	text-align: center;
 	color: rgb(240, 240, 240);
-	top: -1750px;
 }
 
 
