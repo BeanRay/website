@@ -1,0 +1,68 @@
+#footer{
+    background-color: #33336a;
+    color: rgb(255, 255, 255);
+}
+
+
+#mainContainer{
+    width: 100%;
+}
+
+body {
+	margin: 0 auto;
+	width: 800px;
+	padding: 0;
+	background: #ccffd4 url('../Shared%20Documents/images/body_bg.gif') repeat-x top;
+}
+ 
+#headerContainer {
+	margin: 0 auto ;
+	margin-top: 20px;
+	width: 800px;
+	color: rgb(109, 109, 109);
+}
+
+#Logo {
+    position: relative;
+    left: -50px;
+}
+#A{
+    position: relative;
+   top: -140px;
+   left: 450px;
+   color: rgb(255, 255, 255);
+}
+
+#B{
+    position: relative;
+   top: -650px;
+   left: 450px;
+   color: rgb(255, 255, 255);
+}
+
+#topLink{
+	 position: relative;
+    top: -140px;
+    left: 450px;
+	background: #6e7eca;
+	color: rgb(255, 255, 255);
+}
+
+#Nav {
+    position: relative;
+    top: -180px;
+    left: 100px;
+	float: right;
+	margin: 50px 50px 0 0;
+	font-size: 1.4em;
+}
+
+#Nav li {
+	display: inline;
+	margin: 0 0 0 50px;
+}
+
+#wapper{
+    width: 800px;
+    margin: auto;
+}
