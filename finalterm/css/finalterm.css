@@ -1,0 +1,8 @@
+#page-top{
+    background-color: #cf8164;
+}
+
+.flex-nav {
+    display: flex;
+    justify-content: center;
+}
