@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/BeanRay/website#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "formidable": "^2.0.1",
+    "nedb-promises": "^5.0.2"
   }
 }
