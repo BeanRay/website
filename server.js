@@ -12,19 +12,13 @@ var DB = require("nedb-promises");
 var Contact = DB.create("contact.db")
 
 
-
-
-server.post("/contact", function(req, res){
-    server.post("/contact_me", function(req, res){
-        console.log(req.body);
-        //check 
-        Contact.insert(req.body);
-        res.end()
-    })
-   
+server.post("/contact_me", function (req, res) {
+    console.log(req.body);
+    //check 
+    Contact.insert(req.body);
+    res.end()
 })
 
-
-server.listen(8080,function(){
+server.listen(8080, function () {
     console.log("Server is running at port: 8080!!")
 })
