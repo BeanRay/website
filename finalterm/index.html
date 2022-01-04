@@ -77,7 +77,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <img alt="cooking time" src="imagesfinal/網站設計_bg2.png" height="143px" width="1500px" />
+                    <img alt="cooking time" src="imagesfinal/網站設計_長條-1.png" height="143px" width="1605px" />
                 </div>
             </div>
         </div>
@@ -88,7 +88,9 @@
             <div class="row">
                 <div v-for="item in section4s" class="col-lg-6 col-md-12">
                     <p>
+                        <a  v-bind:href="item.href">
                         <img v-bind:src="item.imgSrc" alt="" class="img-fluid"/>
+                        </a>
                     </p>
                     
                 </div>
@@ -114,8 +116,8 @@
             el: '#section4',
             data: {
                 section4s: [
-                    { imgSrc: "imagesfinal/網站設計第三版_便條紙1.png" },
-                    { imgSrc: "imagesfinal/網站設計第三版_便條紙2.png" },
+                    { href:"contact.html" , imgSrc: "imagesfinal/網站設計第三版_便條紙1.png" },
+                    { href:"contact.html" ,imgSrc: "imagesfinal/網站設計第三版_便條紙2.png" },
                 ]
             }
         })
