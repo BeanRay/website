@@ -1,0 +1,61 @@
+#page-top {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #cf8164;
+  }
+
+  .nav-item  {
+    display: block;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    text-decoration: none;
+    line-height:70px;/*區塊同高度   https://ithelp.ithome.com.tw/articles/10213784*/  
+  }
+
+  
+  .nav-item a:hover {
+    background-color: rgba(255, 255, 255, 0.123);
+  }
+
+  .hidden{
+      display: none;
+  }
+
+
+#dont{
+    opacity: 0;
+}
+
+body{
+    background-color: #FFFAF4;
+}
+
+#section1{
+    background-color: #FFEAD8;
+}
+
+#section2{
+    background-color: #FFEAD8;
+}
+
+#section2 p:hover{
+    background-color: rgba(255, 255, 255, 0.603);
+}
+
+#section3{
+    position: relative;
+    left: -120px;
+}
+
+#section4{
+    background-color: #FFFAF4;
+}
+
+#anima{
+    position:absolute;      /*靠右對齊*/
+    right:0px;     /*靠右對齊*/
+    width: 320px; 
+    height: 80px;
+}
