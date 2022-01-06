@@ -68,11 +68,11 @@
             <div class="row">
                 <div v-for="item in section2s" class="col-lg-3 col-md-6  col-sm-6">
                     <p>
-                        <a  v-bind:href="item.href">
-                        <img v-bind:src="item.imgSrc" alt="" class="img-fluid"/>
+                        <a v-bind:href="item.href">
+                            <img v-bind:src="item.imgSrc" alt="" class="img-fluid" />
                         </a>
                     </p>
-                    
+
                 </div>
             </div>
         </div>
@@ -95,8 +95,8 @@
             <div class="row">
                 <div v-for="item in section4s" class="col-lg-12">
                     <p>
-                        <a  v-bind:href="item.href">
-                        <img v-bind:src="item.imgSrc" v-bind:id="item.id" alt="" class="img-fluid"/>
+                        <a v-bind:href="item.href">
+                            <img v-bind:src="item.imgSrc" v-bind:id="item.id" alt="" class="img-fluid" />
                         </a>
                     </p>
                 </div>
@@ -104,49 +104,61 @@
         </div>
     </article>
 
- <!--Vue-->
- <script>
-    var section1 = new Vue({
-        el: '#section1',
-        data: {
-            section1s: [
-                {},
-                { imgSrc: "imagesfinal/素材/網站設計_目錄標題.png" },
-                {}
-            ]
-        }
-    })
+    <!--Vue-->
+    <script>
+        var section1 = new Vue({
+            el: '#section1',
+            data: {
+                section1s: [
+                    {},
+                    { imgSrc: "imagesfinal/素材/網站設計_目錄標題.png" },
+                    {}
+                ]
+            }
+        })
 
 
-    var section2 = new Vue({
-        el: '#section2',
-        data: {
-            section2s: [
-                {href:"#recipe1", imgSrc: "imagesfinal/素材/網站設計_目錄-1.png"},
-                {href:"#recipe2", imgSrc: "imagesfinal/素材/網站設計_目錄-2.png"},
-                {href:"#recipe3", imgSrc: "imagesfinal/素材/網站設計_目錄-3.png"},
-                {href:"#recipe4", imgSrc: "imagesfinal/素材/網站設計_目錄-4.png"},
-                {href:"#recipe5", imgSrc: "imagesfinal/素材/網站設計_目錄-5.png"},
-                {href:"contact.html", imgSrc: "imagesfinal/素材/網站設計_目錄-6.png"},
-            ]
-        }
-    })
+        var section2 = new Vue({
+            el: '#section2',
+            data: {
+                section2s: [
+                    { href: "#recipe1", imgSrc: "imagesfinal/素材/網站設計_目錄-1.png" },
+                    { href: "#recipe2", imgSrc: "imagesfinal/素材/網站設計_目錄-2.png" },
+                    { href: "#recipe3", imgSrc: "imagesfinal/素材/網站設計_目錄-3.png" },
+                    { href: "#recipe4", imgSrc: "imagesfinal/素材/網站設計_目錄-4.png" },
+                    { href: "#recipe5", imgSrc: "imagesfinal/素材/網站設計_目錄-5.png" },
+                    { href: "contact.html", imgSrc: "imagesfinal/素材/網站設計_目錄-6.png" },
+                ]
+            }
+        })
 
-    var section4 = new Vue({
-        el: '#section4',
-        data: {
-            section4s: [
-                {id:"recipe1", imgSrc: "imagesfinal/素材/網站設計_食譜-1.png"},
-                {href:"teach1.html",id:"anima", imgSrc: "imagesfinal/素材/網站設計_動畫按鈕-1.png"},
-                {id:"recipe2", imgSrc: "imagesfinal/素材/網站設計_食譜-2.png"},
-                {href:"teach2.html",id:"anima", imgSrc: "imagesfinal/素材/網站設計_動畫按鈕-1.png"},
-                {id:"recipe3", imgSrc: "imagesfinal/素材/網站設計_食譜-3.png"},
-                {id:"recipe4", imgSrc: "imagesfinal/素材/網站設計_食譜-4.png"},
-                {id:"recipe5", imgSrc: "imagesfinal/素材/網站設計_食譜-5.png"},
-            ]
-        }
-    })
-</script>
+        var section4 = new Vue({
+            el: '#section4',
+            data: {
+                section4s: [
+                    { id: "recipe1", imgSrc: "imagesfinal/素材/網站設計_食譜-1.png" },
+                    { href: "teach1.html", id: "anima", imgSrc: "imagesfinal/素材/網站設計_動畫按鈕-1.png" },
+                    { id: "recipe2", imgSrc: "imagesfinal/素材/網站設計_食譜-2.png" },
+                    { href: "teach2.html", id: "anima", imgSrc: "imagesfinal/素材/網站設計_動畫按鈕-1.png" },
+                    { id: "recipe3", imgSrc: "imagesfinal/素材/網站設計_食譜-3.png" },
+                    { id: "recipe4", imgSrc: "imagesfinal/素材/網站設計_食譜-4.png" },
+                    { id: "recipe5", imgSrc: "imagesfinal/素材/網站設計_食譜-5.png" },
+                ]
+            }
+        })
+    </script>
+
+
+
+    <!--Jquery-->
+    <script>
+        $("#section2").hide();
+        $("#section2").fadeIn(1000);
+
+        $("#section1").hide();
+        $("#section1").fadeIn(1000);
+    </script>
+
 
 </body>
 

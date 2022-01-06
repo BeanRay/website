@@ -61,6 +61,6 @@ body{
 }
 
 #anima:hover{
-   background-color: blueviolet;
+    background-color: #cf8164;
    z-index: 3;
 }
