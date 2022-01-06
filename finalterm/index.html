@@ -88,8 +88,8 @@
             <div class="row">
                 <div v-for="item in section4s" class="col-lg-6 col-md-12">
                     <p>
-                        <a  v-bind:href="item.href">
-                        <img v-bind:src="item.imgSrc" alt="" class="img-fluid"/>
+                        <a  v-bind:href="item.href">    <!--屬性超連結-->
+                        <img v-bind:src="item.imgSrc" alt="" class="img-fluid"/> <!--屬性照片-->
                         </a>
                     </p>
                     
@@ -117,7 +117,7 @@
             data: {
                 section4s: [
                     { href:"recipe.html" , imgSrc: "imagesfinal/網站設計第三版_便條紙1.png" },
-                    { href:"contact.html" ,imgSrc: "imagesfinal/網站設計第三版_便條紙2.png" },
+                    { href:"picturebook.html" ,imgSrc: "imagesfinal/網站設計第三版_便條紙2.png" },
                 ]
             }
         })

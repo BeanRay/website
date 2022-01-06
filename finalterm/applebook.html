@@ -7,13 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
-    <link href="css/teach.css" rel="stylesheet" type="text/css">
+    <link href="css/bookstep.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/vue.min.js"></script>
     <title>食繪趣工場</title>
 </head>
 
 <body>
+
     <!--NAV&HEADER-->
     <nav id=page-top class="navbar navbar-expand-md navbar-dark nav fixed-top">
         <div class="container">
@@ -59,48 +60,44 @@
 
 
     <div class="card1">
-        <img src="imagesfinal/素材/動畫/步驟/飯糰步驟-1.gif" alt="" id="1" class="img-fluid" />
-        <img src="imagesfinal/素材/動畫/步驟/飯糰步驟-2.gif" alt="" id="2" class="img-fluid" />
-        <img src="imagesfinal/素材/動畫/步驟/飯糰步驟-3.gif" alt="" id="3" class="img-fluid" />
+        <img src="imagesfinal/素材/動畫/故事書/蘋果醬-1.gif" alt="" id="1" width="1050" />
+        <img src="imagesfinal/素材/動畫/故事書/蘋果醬-2.gif" alt="" id="2" width="1050" />
+        <img src="imagesfinal/素材/動畫/故事書/蘋果醬-3.gif" alt="" id="3" width="1050" />
+        <img src="imagesfinal/素材/動畫/故事書/蘋果醬-翻頁1.gif" alt="" id="s11" width="1050" />
+        <img src="imagesfinal/素材/動畫/故事書/蘋果醬-翻頁2.gif" alt="" id="s22" width="1050" />
     </div>
 
-
-
-    <!--jquery-->
+    <!--Jquery-->
     <script>
         $("#2").hide();
         $("#3").hide();
+        $("#s11").hide();
+        $("#s22").hide();
 
         $("#1").click(function () {
             $("#1").hide();
-            $("#2").show();
+            $("#s11").show();
+            setTimeout(function(){   $("#s11").hide();}, 2000);
+            setTimeout(function(){   $("#2").show();}, 1700);   //https://www.webteach.tw/?p=1181
         });
 
         $("#2").click(function () {
             $("#2").hide();
-            $("#3").show();
+            $("#s22").show();
+            setTimeout(function(){   $("#s22").hide();}, 2000);
+            setTimeout(function(){   $("#3").show();}, 1700);  
         });
 
         $("#3").click(function () {
             $("#3").hide();
-            $("#1").show();
+            $("#1").fadeIn(2000);
         });
 
-       // $("#1").click(function () {
-       //     $("#1").attr("src", "imagesfinal/素材/動畫/步驟/蘋果醬步驟-2.gif");
-       //     $("#1").attr("id", "1");
-      //  });
 
-      //  $("#1").click(function () {
-      //      $("#2").attr("src", "imagesfinal/素材/動畫/步驟/蘋果醬步驟-3.gif");
-      //      $("#1").attr("id", "2");
-      //  });
-
-     //   $("#1").click(function () {
-     //       $("#3").attr("src", "imagesfinal/素材/動畫/步驟/蘋果醬步驟-1.gif");
-     //       $("#1").attr("id", "3");
-    //    });
     </script>
+
+
+
 
 </body>
 
