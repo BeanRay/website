@@ -29,7 +29,19 @@
 }
 
 body{
-    background-color: #FFFAF4;
+    background-color: #faf3ee;
+}
+
+#section4{
+  text-align: center;
+}
+
+
+#clickpicture{
+  position:absolute;      /*靠右對齊*/
+  right:0px;     /*靠右對齊*/
+  width: 114px; 
+  height: 75px;
 }
 
 

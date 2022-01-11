@@ -37,6 +37,8 @@ body{
     background-color: rgba(207, 20, 20, 0.123);
 }
 
-#back:hover{
-    background-color: rgba(207, 20, 20, 0.123);
+
+#T{
+  position:absolute;      /*靠右對齊*/
+  right:0px;     /*靠右對齊*/
 }

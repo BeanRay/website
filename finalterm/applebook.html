@@ -50,7 +50,7 @@
             <!--container＋fluid 畫面會變固定不能調-->
             <div class="row">
                 <div class="col-lg-12">
-                    <img alt="cooking factory" id="dont" src="imagesfinal/網站設計_食會趣工場.png" height="30px" />
+                    <img alt="cooking factory" id="dont" src="imagesfinal/網站設計_食會趣工場.png" height="100px" />
                     <!--img-fluid 才能使圖片等比例-->
                     <!--排版用-->
                 </div>
@@ -58,40 +58,89 @@
         </div>
     </article>
 
+    <article id="section2">
+        <div class="container">
+            <!--container＋fluid 畫面會變固定不能調-->
+            <div class="row">
+                <div v-for="item in section2s" class="col-lg-4 col-md-12">
+                    <img v-bind:src="item.imgSrc" v-bind:id="item.id" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <article id="section3">
+        <div class="container">
+            <!--container＋fluid 畫面會變固定不能調-->
+            <div class="row">
+                <div class="col-lg-4">
+                </div>
+                <div class="col-lg-4">
+                </div>
+                <div class="col-lg-4">
+                    <a href="index.html">
+                    <img alt="cooking factory" id="it" src="imagesfinal/素材/網站設計_繪本目錄-4.png" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </article>
+
 
     <div class="card1">
-        <img src="imagesfinal/素材/動畫/故事書/蘋果醬-1.gif" alt="" id="1" width="1050" />
-        <img src="imagesfinal/素材/動畫/故事書/蘋果醬-2.gif" alt="" id="2" width="1050" />
-        <img src="imagesfinal/素材/動畫/故事書/蘋果醬-3.gif" alt="" id="3" width="1050" />
-        <img src="imagesfinal/素材/動畫/故事書/蘋果醬-翻頁1.gif" alt="" id="s11" width="1050" />
-        <img src="imagesfinal/素材/動畫/故事書/蘋果醬-翻頁2.gif" alt="" id="s22" width="1050" />
+        <!--<img src="imagesfinal/新動畫/第一頁_2.gif" alt="" id="1" width="1050" />-->
+        <!--<img src="imagesfinal/新動畫/第二頁_2.gif" alt="" id="2" width="1050" />-->
+        <!--<img src="imagesfinal/新動畫/第三頁_2.gif" alt="" id="3" width="1050" />-->
+       <!--<img src="imagesfinal/素材/動畫/故事書/蘋果醬-翻頁1.gif" alt="" id="s11" width="1050" />--> 
+       <!-- <img src="imagesfinal/素材/動畫/故事書/蘋果醬-翻頁2.gif" alt="" id="s22" width="1050" />-->  
     </div>
+
+    <!--Vue.js-->
+    <script>
+          var section2 = new Vue({
+            el: '#section2',
+            data: {
+                section2s: [
+                    { imgSrc: "imagesfinal/新動畫/第一頁_2.gif", id: "1" },
+                    { imgSrc: "imagesfinal/新動畫/第二頁_2.gif", id: "2" },
+                    { imgSrc: "imagesfinal/新動畫/第三頁_2.gif", id: "3" },
+                ]
+            }
+        })
+    </script>
 
     <!--Jquery-->
     <script>
+        $("#1").hide();
         $("#2").hide();
         $("#3").hide();
-        $("#s11").hide();
-        $("#s22").hide();
+        $("#1").fadeIn(1000);
+        $("#2").fadeIn(3000);
+        $("#3").fadeIn(5000);
 
-        $("#1").click(function () {
-            $("#1").hide();
-            $("#s11").show();
-            setTimeout(function(){   $("#s11").hide();}, 2000);
-            setTimeout(function(){   $("#2").show();}, 1700);   //https://www.webteach.tw/?p=1181
-        });
+       // $("#2").hide();
+       // $("#3").hide();
+       // $("#s11").hide();
+       // $("#s22").hide();
 
-        $("#2").click(function () {
-            $("#2").hide();
-            $("#s22").show();
-            setTimeout(function(){   $("#s22").hide();}, 2000);
-            setTimeout(function(){   $("#3").show();}, 1700);  
-        });
+       // $("#1").click(function () {
+         //   $("#1").hide();
+           // $("#s11").show();
+           // setTimeout(function(){   $("#s11").hide();}, 2000);
+           // setTimeout(function(){   $("#2").show();}, 1700);   //https://www.webteach.tw/?p=1181
+       // });
 
-        $("#3").click(function () {
-            $("#3").hide();
-            $("#1").fadeIn(2000);
-        });
+        //$("#2").click(function () {
+          //  $("#2").hide();
+          //  $("#s22").show();
+          //  setTimeout(function(){   $("#s22").hide();}, 2000);
+          //  setTimeout(function(){   $("#3").show();}, 1700);  
+        //});
+
+        //$("#3").click(function () {
+          //  $("#3").hide();
+          //  $("#1").fadeIn(2000);
+        //});
 
 
     </script>
