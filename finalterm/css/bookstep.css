@@ -32,3 +32,6 @@ body{
     background-color: #faf3ee;
 }
 
+#item-4:hover{
+  background-color: rgba(207, 20, 20, 0.123);
+}
