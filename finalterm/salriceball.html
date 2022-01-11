@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,9 +12,10 @@
     <script src="js/vue.min.js"></script>
     <title>食繪趣工場</title>
 </head>
+
 <body>
-      <!--NAV&HEADER-->
-      <nav id=page-top class="navbar navbar-expand-md navbar-dark nav fixed-top">
+    <!--NAV&HEADER-->
+    <nav id=page-top class="navbar navbar-expand-md navbar-dark nav fixed-top">
         <div class="container">
             <a href="#" class="navbar-brand">
                 <img alt="cooking factory" src="imagesfinal/網站設計_食會趣工場.png" height="76px" width="264px" />
@@ -71,15 +73,11 @@
         <div class="container">
             <!--container＋fluid 畫面會變固定不能調-->
             <div class="row">
-                <div class="col-lg-3">
+                <div class="col-lg-10">
                 </div>
-                <div class="col-lg-3">
-                </div>
-                <div class="col-lg-3">
-                </div>
-                <div class="col-lg-3">
+                <div class="col-lg-2">
                     <a href="index.html">
-                    <img alt="cooking factory" id="T" src="imagesfinal/素材/網站設計_繪本目錄-4.png" width="127" height="42"/>
+                        <img alt="cooking factory" id="item-4" src="imagesfinal/素材/網站設計_繪本目錄-4.png" width="127"height="42" />
                     </a>
                 </div>
             </div>
@@ -87,17 +85,17 @@
     </article>
 
     <div class="card2">
-    <!--<img src="imagesfinal/素材/動畫/故事書/鮭魚飯糰-1.png" alt="" id="1" width="1050" />-->    
-    <!--<img src="imagesfinal/素材/動畫/故事書/鮭魚飯糰-2.png" alt="" id="2" width="1050" />-->    
-    <!--<img src="imagesfinal/素材/動畫/故事書/鮭魚飯糰-3.png" alt="" id="3" width="1050" />-->     
-    <!--<img src="imagesfinal/素材/動畫/故事書/鮭魚飯糰-4.png" alt="" id="4" width="1050" />-->     
-    <!--<img src="imagesfinal/素材/動畫/故事書/鮭魚飯糰-翻頁1.gif" alt="" id="s11" width="1050" />-->     
-    <!--<img src="imagesfinal/素材/動畫/故事書/鮭魚飯糰-翻頁2.gif" alt="" id="s22" width="1050" />-->  
-    <!--<img src="imagesfinal/素材/動畫/故事書/鮭魚飯糰-翻頁3.gif" alt="" id="s33" width="1050" />-->   
+        <!--<img src="imagesfinal/素材/動畫/故事書/鮭魚飯糰-1.png" alt="" id="1" width="1050" />-->
+        <!--<img src="imagesfinal/素材/動畫/故事書/鮭魚飯糰-2.png" alt="" id="2" width="1050" />-->
+        <!--<img src="imagesfinal/素材/動畫/故事書/鮭魚飯糰-3.png" alt="" id="3" width="1050" />-->
+        <!--<img src="imagesfinal/素材/動畫/故事書/鮭魚飯糰-4.png" alt="" id="4" width="1050" />-->
+        <!--<img src="imagesfinal/素材/動畫/故事書/鮭魚飯糰-翻頁1.gif" alt="" id="s11" width="1050" />-->
+        <!--<img src="imagesfinal/素材/動畫/故事書/鮭魚飯糰-翻頁2.gif" alt="" id="s22" width="1050" />-->
+        <!--<img src="imagesfinal/素材/動畫/故事書/鮭魚飯糰-翻頁3.gif" alt="" id="s33" width="1050" />-->
     </div>
-    
-  <!--Vue.js-->
-  <script>
+
+    <!--Vue.js-->
+    <script>
         var section2 = new Vue({
             el: '#section2',
             data: {
@@ -109,18 +107,18 @@
                 ]
             }
         })
-  </script>
+    </script>
 
     <!--Jquery-->
     <script>
- $("#1").hide();
- $("#2").hide();
- $("#3").hide();
- $("#4").hide();
- $("#1").fadeIn(1000);
- $("#2").fadeIn(2000);
- $("#3").fadeIn(3000);
- $("#4").fadeIn(4000);
+        $("#1").hide();
+        $("#2").hide();
+        $("#3").hide();
+        $("#4").hide();
+        $("#1").fadeIn(1000);
+        $("#2").fadeIn(2000);
+        $("#3").fadeIn(3000);
+        $("#4").fadeIn(4000);
 
       //  $("#2").hide();
       //  $("#3").hide();
@@ -140,14 +138,14 @@
        //     $("#2").hide();
        //     $("#s22").show();
        //     setTimeout(function(){   $("#s22").hide();}, 2000);
-       //     setTimeout(function(){   $("#3").show();}, 1700);  
+       //     setTimeout(function(){   $("#3").show();}, 1700);
         //});
 
         //$("#3").click(function () {
           //  $("#3").hide();
           //  $("#s33").show();
           //  setTimeout(function(){   $("#s33").hide();}, 2000);
-          //  setTimeout(function(){   $("#4").show();}, 1700);  
+          //  setTimeout(function(){   $("#4").show();}, 1700);
         //});
 
         //$("#4").click(function () {
@@ -160,4 +158,5 @@
 
 
 </body>
+
 </html>
