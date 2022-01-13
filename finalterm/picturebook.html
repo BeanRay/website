@@ -73,12 +73,18 @@
         <div class="container">
             <!--container＋fluid 畫面會變固定不能調-->
             <div class="row">
+                <div class="col-lg-3 col-md-12">
+                
+                </div>
                 <div v-for="item in section2s" class="col-lg-3 col-md-12">
                     <p>
                         <a v-bind:href="item.href">
-                            <img v-bind:src="item.imgSrc" alt="" class="img-fluid">
+                            <img v-bind:src="item.imgSrc" alt="" class="img-fluid" height="10">
                         </a>
                     </p>
+                </div>
+                <div class="col-lg-3 col-md-12">
+                
                 </div>
             </div>
         </div>
@@ -94,7 +100,7 @@
 
                 <div class="col-lg-2">
                     <a href="index.html">
-                    <img alt="cooking time" src="imagesfinal/素材/網站設計_繪本目錄-4.png" id="back" class="img-fluid" />
+                        <img alt="cooking time" src="imagesfinal/素材/網站設計_繪本目錄-4.png" id="back" class="img-fluid" />
                     </a>
                 </div>
 
@@ -110,18 +116,28 @@
             el: '#section2',
             data: {
                 section2s: [
-                    {},
-                    { href: "applebook.html", imgSrc: "imagesfinal/素材/網站設計_繪本目錄-2.png" },
-                    { href: "salriceball.html", imgSrc: "imagesfinal/素材/網站設計_繪本目錄-3.png" },
-                    {}
+                 //   {},
+                   // { href: "applebook.html", imgSrc: "imagesfinal/素材/網站設計_繪本目錄-2.png" },
+                   // { href: "salriceball.html", imgSrc: "imagesfinal/素材/網站設計_繪本目錄-3.png" },
+                   // {}
                 ]
+            }
+        })
+
+        $.ajax({
+
+            url: "/picturebook/section2",
+            method: "post",
+            dataType: "json",
+            success: function (data) {
+                section2.section2s = data;
             }
         })
 
     </script>
 
-     <!--Jquery-->
-     <script>
+    <!--Jquery-->
+    <script>
         $("#section2").hide();
         $("#section2").fadeIn(1000);
 

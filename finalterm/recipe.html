@@ -69,10 +69,16 @@
                 <div v-for="item in section2s" class="col-lg-3 col-md-6  col-sm-6">
                     <p>
                         <a v-bind:href="item.href">
-                            <img v-bind:src="item.imgSrc" alt="" class="img-fluid" />
+                            <img v-bind:src="item.imgSrc" v-bind:id="item.id" alt="" class="img-fluid" />
                         </a>
                     </p>
-
+                </div>
+                <div class="col-lg-3 col-md-6  col-sm-6">
+                    <p>
+                        <a href="contact.html">
+                            <img alt="cooking time" src="imagesfinal/素材/網站設計_目錄-6.png" class="img-fluid" />
+                        </a>
+                    </p>
                 </div>
             </div>
         </div>
@@ -122,13 +128,23 @@
             el: '#section2',
             data: {
                 section2s: [
-                    { href: "#recipe1", imgSrc: "imagesfinal/素材/網站設計_目錄-1.png" },
-                    { href: "#recipe2", imgSrc: "imagesfinal/素材/網站設計_目錄-2.png" },
-                    { href: "#recipe3", imgSrc: "imagesfinal/素材/網站設計_目錄-3.png" },
-                    { href: "#recipe4", imgSrc: "imagesfinal/素材/網站設計_目錄-4.png" },
-                    { href: "#recipe5", imgSrc: "imagesfinal/素材/網站設計_目錄-5.png" },
-                    { href: "contact.html", imgSrc: "imagesfinal/素材/網站設計_目錄-6.png" },
+                    //      { href: "#recipe1", imgSrc: "imagesfinal/素材/網站設計_目錄-1.png" },
+                    //      { href: "#recipe2", imgSrc: "imagesfinal/素材/網站設計_目錄-2.png" },
+                    //      { href: "#recipe3", imgSrc: "imagesfinal/素材/網站設計_目錄-3.png" },
+                    //      { href: "#recipe4", imgSrc: "imagesfinal/素材/網站設計_目錄-4.png" },
+                    //      { href: "#recipe5", imgSrc: "imagesfinal/素材/網站設計_目錄-5.png" },
+                    //      { href: "contact.html", imgSrc: "imagesfinal/素材/網站設計_目錄-6.png"}
                 ]
+            }
+        })
+
+        $.ajax({
+
+            url: "/recipe/section2",
+            method: "post",
+            dataType: "json",
+            success: function (data) {
+                section2.section2s = data;
             }
         })
 
